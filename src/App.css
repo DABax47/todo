@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
-}
+.App{
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+position: absolute;
+left: 589px;
+top: 150px;
+width: 486px;
+height: 395px;
+/* border: solid 2px green; */
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.todos-Container{
+height: 100%;
+width: 100%;
+/* border: solid 2px red ; */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-Item-Container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+ul{
+  line-height: 2em;
+  margin-top: 40px;
+}
+li{
+
+  max-width: 325px;
+ overflow-wrap: break-word;
+ word-wrap: break-word;
+
+}
+.list-Item-Container span button{
+
+
+}
+button{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+form{
+  width: 100%;
+text-align:center}
+form input{
+  width: 68%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
+  position: relative;
+  left: 375px;
+  top: 125px;
+  margin:auto;
+  padding:10px;
+  width: 35%;
+  height: 50vh;
+  border:solid;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
 }
+h1{
+font-size: 1.25em;
+}
+ul{
+padding-left: 10px;
+}
+li{
+  font-size:1em;
+  display:inline-block;
+  margin-right: 12px;
+
+}
+ul button{
+  font-size:.5em;
+  padding: 0;
+
+}
+.todos-Container{
+height: 100%;
+border: solid 2px red ;
+  }
+.filter select{
+  width:95%;
+  height: 25px;
+}
+.done{
+  color: teal;
+  text-decoration: line-through;
+  opacity: .4;
+} */
