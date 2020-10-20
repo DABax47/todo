@@ -1,125 +1,166 @@
-.App{
+/* small */
+  .App{
 
-position: absolute;
-left: 589px;
-top: 150px;
-width: 486px;
-height: 395px;
-/* border: solid 2px green; */
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-}
-.todos-Container{
-height: 100%;
-width: 100%;
-/* border: solid 2px red ; */
-  }
-.list-Item-Container{
-  display: flex;
-  justify-content: space-between;
-}
-ul{
-  line-height: 2em;
-  margin-top: 40px;
-}
-li{
-
-  max-width: 325px;
- overflow-wrap: break-word;
- word-wrap: break-word;
-
-}
-.list-Item-Container span button{
-
-
-}
-button{
-  background-color: black;
-  color: white;
-}
-
-
-
-
-form{
-  width: 100%;
-text-align:center}
-form input{
-  width: 68%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .App {
-  position: relative;
-  left: 375px;
-  top: 125px;
-  margin:auto;
-  padding:10px;
-  width: 35%;
-  height: 50vh;
-  border:solid;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  min-width: 50%;
+  min-height: 50%;
   display: flex;
   flex-direction: column;
-  text-align: center;
-
-}
-h1{
-font-size: 1.25em;
-}
-ul{
-padding-left: 10px;
-}
-li{
-  font-size:1em;
-  display:inline-block;
-  margin-right: 12px;
-
-}
-ul button{
-  font-size:.5em;
-  padding: 0;
-
-}
-.todos-Container{
-height: 100%;
-border: solid 2px red ;
+  justify-content: space-around;
+  align-items: center;
   }
-.filter select{
-  width:95%;
-  height: 25px;
-}
+  .todos-Container{
+  height: 100%;
+  width: 100%;
+font-size: 2em;
+    }
+  .list-Item-Container{
+    display: flex;
+    justify-content: space-between;
+  }
+  ul{
+    line-height: 2em;
+    margin-top: 40px;
+  }
+  li{
+
+    max-width: 325px;
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+
+  }
+  .list-Item-Container span button{
+
+
+  }
+  button{
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+  form{
+    width: 100%;
+  text-align:center}
+  form input{
+    width: 68%;
+  }
+  .todo-item{
+    transition-duration: .4s;
+  }
 .done{
-  color: teal;
-  text-decoration: line-through;
-  opacity: .4;
-} */
+  color: rgb(105,105,105)
+;
+  font-size: .75em;
+  transition-duration: .4s;
+}
+@media screen and (min-width: 425px)   {
+  /* medium*/
+  .App{
+  position: absolute;
+  left: 24%;
+  top: 26%;
+  min-width: 50%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  }
+  .todos-Container{
+  height: 100%;
+  width: 100%;
+    }
+  .list-Item-Container{
+    display: flex;
+    justify-content: space-between;
+  }
+  ul{
+    line-height: 2em;
+    margin-top: 40px;
+  }
+  li{
+
+    max-width: 325px;
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+
+  }
+  .list-Item-Container span button{
+
+
+  }
+  button{
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+  form{
+    width: 100%;
+  text-align:center}
+  form input{
+    width: 68%;
+  }
+}
+
+/*large */
+@media screen and (min-width: 769px)   {
+  .App{
+
+  position: absolute;
+  left: 26em;
+  top: 9em;
+  width: 30em;
+  height: 28em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  }
+  .todos-Container{
+  height: 100%;
+  width: 100%;
+
+    }
+  .list-Item-Container{
+    display: flex;
+    justify-content: space-between;
+  }
+  ul{
+    line-height: 2em;
+    margin-top: 40px;
+  }
+  li{
+
+    max-width: 325px;
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+
+  }
+  .list-Item-Container span button{
+
+
+  }
+  button{
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+  form{
+    width: 100%;
+  text-align:center}
+  form input{
+    width: 68%;
+  }
+}

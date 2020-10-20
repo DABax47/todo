@@ -16,10 +16,10 @@ img{
   position: absolute;
 width: 55vw;
 height: 100vh;
-/* left: -178px;*/
+
 top: 0px;
 }
-.seperator{
+/* .seperator{
   position: absolute;
 width: 486px;
 height: 0px;
@@ -28,7 +28,7 @@ top: 287px;
 
 border: 1px solid #000000;
 
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

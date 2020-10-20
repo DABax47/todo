@@ -4,6 +4,7 @@ import './App.css';
 import Form from './components/Form'
 import Todos from './components/Todos'
 import Filter from './components/Filter'
+import Name  from './components/Name'
 function App() {
   const [inputText, setInputText] = useState('');
   const [todos, setTodos] = useState([]);
@@ -11,7 +12,7 @@ function App() {
   const[status, setFilterStatus] = useState('all')
 //create a state holding the filtered todos
 const[filteredTodos, setFilteredTodos] = useState([]);
-
+const [name, setName] = useState('Tyler');
 //functions and events
 
 const filterHandler=()=>{
@@ -27,7 +28,11 @@ const filterHandler=()=>{
       break;
   }
 
+
 }
+useEffect(()=>{
+   getLocalTodos();
+},[])
 //useEffect
 //if [] is the second param then it will execute only
 //once the app is first rendered
@@ -35,17 +40,29 @@ const filterHandler=()=>{
 //the code will run everytime that state changed
 //in this case run efverytime tht filter option is changed
 useEffect(()=>{
-  console.log(1);
 filterHandler();
+saveLocalTodos();
 },[todos,status])
 
 
 //Add functionallity
 //that will save the list of todos and keep the data even if page is refreshed
 //use local storage.
+// SAVE TO LOCAL STORAGE
+const saveLocalTodos=()=>{
+  localStorage.setItem('todos',JSON.stringify(todos));
+};
+const getLocalTodos =()=>{
+  if (localStorage.getItem('todos')===null) {
+    localStorage.setItem('todos',JSON.stringify([]));
+  }else{
+  let todoFromLocal =  JSON.parse(localStorage.getItem('todos'));
+setTodos(todoFromLocal);
+  }
+}
   return (
     <div className="App">
-    <h1> \Somone's ToDo List\</h1>
+      <Name name = {name} setName={setName}/>
       <Form todos={todos}setTodos={setTodos} inputText={inputText} setInputText={setInputText}/>
       <Todos setTodos={setTodos} todos={todos} filteredTodos={filteredTodos}/>
       <Filter  setFilterStatus={setFilterStatus}/>
